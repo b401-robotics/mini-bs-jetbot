@@ -1,0 +1,48 @@
+<!-- Author: Wildan & Hansen -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Control</title>
+    <script type="text/javascript" src="roslib.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- R1 -> red -->
+    <!-- R2 -> green -->
+    <!-- R3 -> blue -->
+    <table>
+        <tr>
+            <td><button style="width: 100px; height: 100px; color: white; background-color: red; font-size: 50px;" >R1</button></td>
+            <td><button style="width: 100px; height: 100px; color: white; background-color: green; font-size: 50px;" >R2</button></td>
+            <td><button style="width: 100px; height: 100px; color: white; background-color: blue; font-size: 50px;" >R3</button></td>
+        </tr>
+    </table>
+
+
+    <canvas id="game_state" width="400" height="50" ></canvas>
+
+    <!-- 
+        const int scale = 5;
+        const int width = 148.5 * scale;
+        const int height = 197 * scale; 
+    -->
+    <canvas id="world_model" width="742.5" height="985" ></canvas>
+
+
+    <div id="game-container">
+        <button id="start-button">Start</button>
+        <button id="end-button">End</button>
+        <div id="seeker-choice">
+            <label for="seeker-input">Enter Seeker Number:</label>
+            <input type="number" id="seeker-input" min="1" max="3">
+        </div>
+        <button id="confirm-seeker">Confirm Seeker</button>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

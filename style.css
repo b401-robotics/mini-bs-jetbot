@@ -1,0 +1,37 @@
+/* Author: Hansen */
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+canvas {
+    border: 3px solid black;
+}
+
+#game-container {
+    text-align: center;
+}
+
+#start-button, #end-button, #confirm-seeker {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#seeker-choice {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#seeker-input {
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 5px;
+}
+
